@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="{global.baseUrl}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{head.description}">
+    
+    <link type="image/x-icon" rel='icon' href="favicon.ico" />
+    <script type="text/javascript" charset="utf-8" src="public/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/app.css" />  
+  
+    <title>{head.title} | {global.appName}</title>
+</head>
+<body class="{body.class}">
+
+    <div class="wrapper">
+        <div class="header">
+            <a class="logo" href="/">
+                <img src="public/logo.png" alt="Logo" />
+            </a>
+            <ul class="menu">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li class="loggedOut">
+                    <a  href="/account/create">SignUp</a>
+                </li>
+                <li class="loggedOut">
+                    <a href="/session/create">LogIn</a>
+                </li>
+                <li class="loggedIn">
+                    <a href="/checks/all">Dashboard</a>
+                </li>
+                <li class="loggedIn">
+                    <a href="/account/edit">Account Settings</a>
+                </li>
+                <li class="loggedIn">
+                    <a id="logoutButton" href="#">LogOut</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+
