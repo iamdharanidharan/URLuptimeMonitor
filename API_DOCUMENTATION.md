@@ -1,16 +1,16 @@
 - [API DOCUMENTATION](#api-documentation)
-  * [Endpoints: users, tokens, checks](#endpoints--users--tokens--checks)
-  * [Users: /api/users](#users---api-users)
+  * Endpoints: users, tokens, checks
+  * Users: /api/users
     + [Create User](#create-user)
     + [Get user details](#get-user-details)
     + [Update User details](#update-user-details)
     + [Delete User](#delete-user)
-  * [Tokens: /api/tokens](#tokens---api-tokens)
+  * Tokens: /api/tokens
     + [Create auth_token](#create-auth-token)
     + [Get auth_token expiry time](#get-auth-token-expiry-time)
     + [Extend Token expiry by 1 hour](#extend-token-expiry-by-1-hour)
     + [Delete Token](#delete-token)
-  * [Checks: /api/checks](#checks---api-checks)
+  * Checks: /api/checks
     + [Create Check item](#create-check-item)
     + [Get Check item details](#get-check-item-details)
     + [Update Check item](#update-check-item)
