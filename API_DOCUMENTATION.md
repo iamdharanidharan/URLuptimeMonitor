@@ -1,4 +1,7 @@
-- [API DOCUMENTATION](#api-documentation)
+# API DOCUMENTATION
+
+
+- Table of Contents
   * Endpoints: users, tokens, checks
   * Users: /api/users
     + [Create User](#create-user)
@@ -16,14 +19,13 @@
     + [Update Check item](#update-check-item)
     + [Delete Check item](#delete-check-item)
 
+&nbsp;
 
-# API DOCUMENTATION <a name="api-documentation" />
-
-
-## Endpoints: users, tokens, checks
+## Endpoints: users, tokens, checks  
+&nbsp;
 
 > ## Users: /api/users
-
+&nbsp;
 ### Create User <a name="create-user" />
 
 Method: POST
@@ -35,7 +37,8 @@ Method: POST
 	"password" : "password",
 	"tosAgreement" : boolean
 }
-```
+```  
+&nbsp;
 ### Get user details <a name="get-user-details" />
 
 Method: GET 
@@ -44,6 +47,7 @@ Header: token= auth_token
 
 Query String: ?phone=1234567890
 
+&nbsp;
 ### Update User details <a name="update-user-details" />
 
 Method: PUT
@@ -58,7 +62,7 @@ Header: token= auth_token
 	"password" : "password"
 }
 ```
-
+&nbsp;
 ### Delete User <a name="delete-user" />
 
 Method: DELETE
@@ -67,8 +71,11 @@ Header: token= auth_token
 
 Query String: ?phone=1234567890
 
+&nbsp;
 
 > ## Tokens: /api/tokens
+
+&nbsp;
 
 ### Create auth_token <a name="create-auth-token" />
 
@@ -80,11 +87,15 @@ Method: POST
 }
 ```
 
+&nbsp;
+
 ### Get auth_token expiry time <a name="get-auth-token-expiry-time" />
 
 Method: GET 
 
 Query String: ?id=auth_token
+
+&nbsp;
 
 ### Extend Token expiry by 1 hour <a name="extend-token-expiry-by-1-hour" />
 
@@ -96,14 +107,19 @@ Method: PUT
 }
 ```
 
+&nbsp;
+
 ### Delete Token <a name="delete-token" />
 
 Method: DELETE
 
 Query String: ?id=auth_token
 
+&nbsp;
 
 > ## Checks: /api/checks
+
+&nbsp;
 
 ### Create Check item <a name="create-check-item" />
 
@@ -121,6 +137,8 @@ Header: token= auth_token
 }
 ```
 
+&nbsp;
+
 ### Get Check item details <a name="get-check-item-details" />
 
 Method: GET 
@@ -128,6 +146,8 @@ Method: GET
 Header: token= auth_token
 
 Query String: ?id=check_id
+
+&nbsp;
 
 ### Update Check item <a name="update-check-item"/>
 
@@ -146,6 +166,8 @@ Header: token= auth_token
 	'timeOutSeconds' : 3 // >=1 && <= 5
 }
 ```
+
+&nbsp;
 
 ### Delete Check item <a name="delete-check-item"/>
 
