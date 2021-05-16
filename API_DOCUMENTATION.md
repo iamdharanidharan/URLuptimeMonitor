@@ -45,7 +45,9 @@ Method: GET
 
 Header: token= auth_token
 
-Query String: ?phone=1234567890
+```
+Query String: /api/users?phone=1234567890
+```
 
 &nbsp;
 ### Update User details <a name="update-user-details" />
@@ -69,7 +71,9 @@ Method: DELETE
 
 Header: token= auth_token
 
-Query String: ?phone=1234567890
+```
+Query String: /api/users?phone=1234567890
+```
 
 &nbsp;
 
@@ -93,7 +97,9 @@ Method: POST
 
 Method: GET 
 
-Query String: ?id=auth_token
+```
+Query String: /api/tokens?id=auth_token
+```
 
 &nbsp;
 
@@ -113,7 +119,9 @@ Method: PUT
 
 Method: DELETE
 
-Query String: ?id=auth_token
+```
+Query String: /api/tokens?id=auth_token
+```
 
 &nbsp;
 
@@ -145,7 +153,9 @@ Method: GET
 
 Header: token= auth_token
 
-Query String: ?id=check_id
+```
+Query String: /api/checks?id=check_id
+```
 
 &nbsp;
 
@@ -175,4 +185,6 @@ Method: DELETE
 
 Header: token= auth_token
 
-Query String: ?id=check_id
+```
+Query String: /api/checks?id=check_id
+```
